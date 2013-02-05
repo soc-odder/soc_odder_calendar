@@ -81,10 +81,10 @@ function soc_odder_calendar_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '8',
+          'weight' => '7',
         ),
         'path' => array(
-          'weight' => '10',
+          'weight' => '8',
         ),
         'redirect' => array(
           'weight' => '9',

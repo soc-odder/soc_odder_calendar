@@ -93,7 +93,7 @@ function soc_odder_calendar_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'entityreference_autocomplete',
-        'weight' => '6',
+        'weight' => '5',
       ),
     ),
   );
@@ -336,7 +336,7 @@ function soc_odder_calendar_field_default_fields() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_field',
-        'weight' => '7',
+        'weight' => '6',
       ),
     ),
   );
