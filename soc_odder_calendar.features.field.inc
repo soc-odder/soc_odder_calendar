@@ -485,8 +485,9 @@ function soc_odder_calendar_field_default_fields() {
       'settings' => array(
         'better_formats' => array(
           'allowed_formats' => array(
-            'filtered_html' => 'filtered_html',
+            'filtered_html' => 0,
             'plain_text' => 0,
+            'wysiwyg' => 'wysiwyg',
           ),
           'allowed_formats_toggle' => 1,
           'default_order_toggle' => 0,
@@ -497,6 +498,9 @@ function soc_odder_calendar_field_default_fields() {
               ),
               'plain_text' => array(
                 'weight' => '10',
+              ),
+              'wysiwyg' => array(
+                'weight' => '0',
               ),
             ),
           ),
