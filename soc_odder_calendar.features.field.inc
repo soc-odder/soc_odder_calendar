@@ -45,6 +45,7 @@ function soc_odder_calendar_field_default_fields() {
             'type' => 'none',
           ),
           'target_bundles' => array(
+            'forfatter' => 'forfatter',
             'kandidat' => 'kandidat',
           ),
         ),
@@ -154,7 +155,7 @@ function soc_odder_calendar_field_default_fields() {
         ),
       ),
       'entity_type' => 'node',
-      'fences_wrapper' => 'div',
+      'fences_wrapper' => 'no_wrapper',
       'field_name' => 'field_date',
       'label' => 'Dato',
       'required' => 0,
@@ -169,7 +170,7 @@ function soc_odder_calendar_field_default_fields() {
         'active' => 1,
         'module' => 'date',
         'settings' => array(
-          'increment' => 15,
+          'increment' => '15',
           'input_format' => 'm/d/Y - H:i:s',
           'input_format_custom' => '',
           'label_position' => 'above',
@@ -390,13 +391,14 @@ function soc_odder_calendar_field_default_fields() {
       'entity_type' => 'node',
       'fences_wrapper' => 'div',
       'field_name' => 'field_teaser',
-      'label' => 'Smagsprøve',
+      'label' => 'Manchet',
       'required' => 0,
       'settings' => array(
         'better_formats' => array(
           'allowed_formats' => array(
             'filtered_html' => 'filtered_html',
             'plain_text' => 'plain_text',
+            'wysiwyg' => 0,
           ),
           'allowed_formats_toggle' => 0,
           'default_order_toggle' => 0,
@@ -407,6 +409,9 @@ function soc_odder_calendar_field_default_fields() {
               ),
               'plain_text' => array(
                 'weight' => '10',
+              ),
+              'wysiwyg' => array(
+                'weight' => '0',
               ),
             ),
           ),
@@ -602,7 +607,7 @@ function soc_odder_calendar_field_default_fields() {
   t('Kandidat');
   t('Kategori');
   t('Link');
-  t('Smagsprøve');
+  t('Manchet');
   t('Tekst');
   t('Titel');
 
