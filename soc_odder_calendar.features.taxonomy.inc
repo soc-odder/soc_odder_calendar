@@ -13,9 +13,9 @@ function soc_odder_calendar_taxonomy_default_vocabularies() {
       'name' => 'Event-kategori',
       'machine_name' => 'soc_odder_event_kategori',
       'description' => '',
-      'hierarchy' => '0',
+      'hierarchy' => 0,
       'module' => 'taxonomy',
-      'weight' => '0',
+      'weight' => 0,
     ),
   );
 }
